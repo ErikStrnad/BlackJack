@@ -1,0 +1,158 @@
+body {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container {
+    width: 75%;
+    margin: 50px auto;
+}
+
+.title-image {
+    width: 25%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+#dealer,
+#player,
+#split {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 1em;
+    height: 180px;
+}
+
+#dealer-box,
+#player-box,
+#split-box {
+    text-align: center;
+    margin-top: 37px;
+}
+
+.player-cards .dealer-cards,
+.split-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#split {
+    display: none;
+}
+
+#player-cards img,
+#dealer-cards img,
+#split-cards img {
+    margin: 12px 10px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+}
+
+.my-button,
+.button-start {
+    display: inline-block;
+    height: 60px;
+    width: 144px;
+    padding: 15px 25px;
+    margin: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 5px #999;
+}
+
+.button-start {
+    width: 170px;
+    height: 70px;
+    font-size: 23px;
+}
+
+.button-restart {
+    display: none;
+}
+
+.my-button:hover {
+    background-color: #25963f;
+}
+
+.my-button:active {
+    background-color: #25963f;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.button-start {
+    background-color: #dc3545;
+}
+
+.button-start:hover {
+    background-color: #c42f3e;
+}
+
+.button-start:active {
+    background-color: #c42f3e;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#buttons input {
+    margin-top: 15px;
+    width: 100px;
+    font-size: 18px;
+    display: none;
+}
+
+#button-split,
+#button-double,
+#button-stand,
+#button-hit,
+#button-deal,
+#button-bet,
+#button-input {
+    display: none;
+}
+
+.bets {
+    margin-left: 58px;
+    margin-top: 40px;
+}
+
+.game-status {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-gap: 1em;
+    margin-top: 20px;
+}
+
+.start-game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    margin-left: 24%;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: #f0ad4e;
+}

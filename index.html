@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Jack</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="shortcut icon" href="#">
+    <script src="js/BlackJack.js" type="module"></script>
+</head>
+
+<body class="text-light">
+    <div class="container">
+        <img class="title-image" src="images/title.png" alt="Title">
+        <div id="dealer">
+            <div id="dealer-box">
+                <h5>Dealer</h5>
+                <h5>Cards value:</h5>
+                <h5><span id="dealer-cards-value"></span></h5>
+            </div>
+            <div id="dealer-cards">
+            </div>
+        </div>
+        <div id="player">
+            <div id="player-box">
+                <h5>Player</h5>
+                <h5 id="left-Hand"></h5>
+                <h5>Cards value:</h5>
+                <h5><span id="player-cards-value"></span></h5>
+                <h5><span id="left-status"></span></h5>
+            </div>
+            <div id="player-cards">
+            </div>
+        </div>
+        <div id="split">
+            <div id="split-box">
+                <h5>Player</h5>
+                <h5 id="right-Hand"></h5>
+                <h5>Cards value:</h5>
+                <h5><span id="split-cards-value"></span></h5>
+                <h5><span id="right-status"></span></h5>
+            </div>
+            <div id="split-cards">
+            </div>
+        </div>
+        <div class="bets">
+            <h5>Player's bets: <span id="player-bets"></span></h5>
+        </div>
+        <div class="start-game">
+            <button id="button-startGame" class="button-start">Start Game</button>
+        </div>
+        <div class="game-status">
+            <div>
+                <h4>Game status: <span id="game-status">Click on Start Game</span> </h4>
+            </div>
+            <div>
+                <h5>Player chips: <span id="chips">1000</span> </h5>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="button-split" class="my-button">Split</button>
+            <button id="button-double" class="my-button">Double</button>
+            <button id="button-stand" class="my-button">Stand</button>
+            <button id="button-hit" class="my-button">Hit</button>
+            <button id="button-deal" class="my-button">Deal cards</button>
+            <button id="button-bet" class="my-button">Bet</button>
+            <input id="bet-input" class="form-control" type="number" min="0">
+        </div>
+    </div>
+</body>
+
+</html>
